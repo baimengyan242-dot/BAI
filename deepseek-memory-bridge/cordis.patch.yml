@@ -1,0 +1,7 @@
+- insert:
+    - id: deepseek-memory-bridge
+      name: dsh-deepseek-memory-bridge
+      config:
+        autoRecall: false
+        recallBudgetTokens: 800
+        recallLimit: 6

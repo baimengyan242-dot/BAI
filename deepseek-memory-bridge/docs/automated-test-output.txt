@@ -1,0 +1,30 @@
+✔ native closure-factory client registers the real DSH settings.section (60.0978ms)
+✔ simulated adapters preserve arrays, nested containers and all mapping branches (20.7455ms)
+✔ original bytes, unknown fields, attachments, message order and inference boundaries (95.8061ms)
+✔ duplicate and incremental imports retain versions and combine evidence (134.7744ms)
+✔ reviewed memories survive process restart and obey the recall budget (212.551ms)
+✔ conflicts require a decision and rollback retains revisions (147.3849ms)
+✔ interrupted imports resume from committed batches without duplicate messages (280.6221ms)
+✔ ZIP safety covers attachments, traversal, compression bombs, CRC and incomplete JSON (159.2204ms)
+✔ credentials, prompt injection, forged confirmation, scope and expiration (70.4287ms)
+✔ merge, edit, soft deletion, purge and JSON/Markdown export (105.3487ms)
+✔ full backup restoration checks tampering and preserves source traceability (149.5491ms)
+✔ chunk uploads enforce ordering, size limits and explicit confirmation (71.2834ms)
+✔ remote extraction needs consent and rejects fabricated source evidence (88.8527ms)
+✔ streaming performance and long-conversation guards with simulated data (9365.0465ms)
+ℹ {"fixture":"synthetic","fileBytes":11249891,"conversations":1000,"messages":20000,"elapsedMs":7563,"rssDeltaMiB":60}
+✔ real Cordis 4.1.0 and DSH rc.1 register, execute and unload eight tools (42.2676ms)
+✔ real dynamic contexts recall sourced facts across sessions and skip unrelated queries (130.4991ms)
+✔ native RPC rejects non-owners and removes its route on unload (55.329ms)
+✔ migration preserves every library area, rebases paths, removes the source and persists across restart (334.4312ms)
+✔ migration refuses unsafe or occupied destinations and keeps the source readable on failure (59.3196ms)
+✔ open existing library validates archives, retains the old library and rejects a second writer (124.3653ms)
+✔ folder selection lists drives and directories; a missing saved drive never creates an empty library (15.5785ms)
+ℹ tests 21
+ℹ suites 0
+ℹ pass 21
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 12403.3202

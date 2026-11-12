@@ -1,0 +1,10 @@
+node_modules/
+dist/
+release/
+.test-data/
+environment/
+.playwright-cli/
+output/
+.taste-skill/
+*.sqlite*
+*.log

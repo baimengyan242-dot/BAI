@@ -1,0 +1,8 @@
+{
+  "fixture": "synthetic",
+  "fileBytes": 11249891,
+  "conversations": 1000,
+  "messages": 20000,
+  "elapsedMs": 7563,
+  "rssDeltaMiB": 60
+}

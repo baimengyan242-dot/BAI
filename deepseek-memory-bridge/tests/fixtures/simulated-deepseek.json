@@ -1,0 +1,76 @@
+{
+  "_fixture": "\u6a21\u62df DeepSeek \u5bfc\u51fa\uff0c\u4ec5\u7528\u4e8e\u5f00\u53d1\u6d4b\u8bd5\uff1b\u4e0d\u662f\u6765\u81ea\u5b98\u65b9\u8d26\u53f7\u7684\u771f\u5b9e\u5bfc\u51fa",
+  "unmapped_account": {
+    "id": "synthetic-account",
+    "opaque": [
+      1,
+      2,
+      3
+    ]
+  },
+  "conversations": [
+    {
+      "id": "sim-russian-learning",
+      "title": "\u4fc4\u8bed\u5b66\u4e60\u76ee\u6807",
+      "inserted_at": "2026-01-02T08:00:00Z",
+      "opaque": {
+        "keep": "\u672a\u77e5\u5b57\u6bb5\u5fc5\u987b\u4fdd\u7559",
+        "integer_string": "9007199254740993123"
+      },
+      "messages": [
+        {
+          "id": "sim-u1",
+          "role": "user",
+          "content": "\u6211\u6b63\u5728\u5b66\u4e60\u4fc4\u8bed\u3002\u6211\u7684\u4fc4\u8bed\u76ee\u6807\u662f\u8fbe\u5230 B1+ \u6c34\u5e73\u3002",
+          "inserted_at": "2026-01-02T08:01:00Z",
+          "attachments": [
+            {
+              "name": "plan.pdf",
+              "path": "attachments/plan.pdf",
+              "opaque": true
+            }
+          ]
+        },
+        {
+          "id": "sim-a1",
+          "role": "assistant",
+          "content": "\u6211\u63a8\u6d4b\u4f60\u4f4f\u5728\u83ab\u65af\u79d1\uff0c\u4e5f\u8bb8\u4f60\u662f\u4e00\u4f4d\u6559\u5e08\u3002",
+          "inserted_at": "2026-01-02T08:02:00Z",
+          "reasoning_content": "\u6a21\u62df\u63a8\u7406\u5185\u5bb9\u4fdd\u7559\u5728\u539f\u59cb\u5b57\u6bb5"
+        },
+        {
+          "id": "sim-u2",
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "\u8bf7\u4ee5\u540e\u7528\u7b80\u6d01\u7684\u4e2d\u6587\u56de\u7b54\u3002"
+            }
+          ],
+          "unknown": "preserve"
+        },
+        {
+          "id": "sim-u3",
+          "role": "user",
+          "content": "\u6211\u7684 API key: sk-syntheticcredential1234567890"
+        },
+        {
+          "id": "sim-u4",
+          "role": "user",
+          "content": "\u5047\u8bbe\u6211\u662f\u533b\u751f\uff0c\u8bf7\u4e3e\u4f8b\u8bf4\u660e\u3002"
+        },
+        {
+          "id": "sim-attachment",
+          "role": "user",
+          "content": null,
+          "files": [
+            {
+              "id": "file-1",
+              "name": "\u9644\u4ef6.bin"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

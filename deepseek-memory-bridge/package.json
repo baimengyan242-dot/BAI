@@ -1,0 +1,106 @@
+{
+  "name": "dsh-deepseek-memory-bridge",
+  "version": "0.2.2",
+  "description": "Local DeepSeek history archives, reviewed memories, cross-session recall and selectable storage drives for DSH",
+  "type": "module",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./client": {
+      "types": "./dist/types/client.d.ts",
+      "default": "./dist/client.js"
+    },
+    "./core": {
+      "types": "./dist/types/core.d.ts",
+      "default": "./dist/core.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "deepseek-memory-bridge": "dist/cli.js"
+  },
+  "engines": {
+    "node": ">=24.9.0",
+    "dsh": "0.2.2-rc.1"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-connection",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-ui-slots"
+      ],
+      "platform": "web"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "scripts/install.ps1",
+    "scripts/uninstall.ps1",
+    "scripts/build.mjs",
+    "scripts/check-existing-plugin.mjs",
+    "scripts/check-publication.py",
+    "tests",
+    "tsconfig.json",
+    "pnpm-lock.yaml",
+    "pnpm-workspace.yaml",
+    "cordis.patch.yml",
+    "README.md",
+    "CHANGELOG.md",
+    "docs",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test --test-concurrency=1 tests/*.test.mjs",
+    "check": "pnpm run typecheck && pnpm run build && pnpm run test",
+    "pack:release": "pnpm pack --pack-destination release"
+  },
+  "dependencies": {
+    "@deepseek-ai/schemastery": "3.19.0",
+    "stream-json": "3.9.0",
+    "yauzl": "3.4.0"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "~4.1.0",
+    "@deepseek-ai/dsh-agent": "0.2.2-rc.1",
+    "@deepseek-ai/dsh-client-connection": "0.2.2-rc.1",
+    "@deepseek-ai/dsh-system-prompt": "0.2.2-rc.1",
+    "@deepseek-ai/dsh-tools": "0.2.2-rc.1",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "4.1.0",
+    "@deepseek-ai/dsh-agent": "0.2.2-rc.1",
+    "@deepseek-ai/dsh-client-connection": "0.2.2-rc.1",
+    "@deepseek-ai/dsh-client-ui-renderer": "0.2.2-rc.1",
+    "@deepseek-ai/dsh-client-ui-settings": "0.2.2-rc.1",
+    "@deepseek-ai/dsh-client-ui-slots": "0.2.2-rc.1",
+    "@deepseek-ai/dsh-llm": "0.2.2-rc.1",
+    "@deepseek-ai/dsh-system-prompt": "0.2.2-rc.1",
+    "@deepseek-ai/dsh-tool-executor-native": "0.2.2-rc.1",
+    "@deepseek-ai/dsh-tools": "0.2.2-rc.1",
+    "@deepseek-ai/schemastery": "3.19.0",
+    "@playwright/cli": "^0.1.24",
+    "@types/node": "^24.0.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.7",
+    "@types/yauzl": "^2.10.3",
+    "esbuild": "^0.25.12",
+    "fflate": "^0.8.2",
+    "playwright": "^1.56.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "typescript": "~5.9.3"
+  }
+}

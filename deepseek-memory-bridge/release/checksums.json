@@ -1,0 +1,15 @@
+{
+  "version": "0.2.2",
+  "artifacts": [
+    {
+      "file": "deepseek-memory-bridge-0.2.2-source.zip",
+      "bytes": 367124,
+      "sha256": "d95cd1d678e9181d1f22444ba29c0c31811446f49378b072d2b21c62b5dc5604"
+    },
+    {
+      "file": "dsh-deepseek-memory-bridge-0.2.2.tgz",
+      "bytes": 328884,
+      "sha256": "e1c11aac8a2840ed6817b4fb54c7a4a6315e5f9089c3a88fbd7fa27150df9e04"
+    }
+  ]
+}
